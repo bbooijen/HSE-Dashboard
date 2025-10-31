@@ -175,7 +175,7 @@ class Bodemenergie:
 
     def Investering(self):
         G1 = 10000  # HSE prijs
-        G2_PVT = 1500 + self.Benodigde_panelen
+        G2_PVT = 1500 * self.Benodigde_panelen
         Invest = G1 + G2_PVT
         self.Invest = Invest
         return Invest
@@ -417,6 +417,7 @@ except Exception as e:
 
 
 # In[ ]:
+
 
 
 
